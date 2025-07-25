@@ -36,11 +36,10 @@ export default function Header() {
     <header style={headerStyle} className={technologyFont.variable} suppressHydrationWarning>
       <div style={headerContainerStyle}>
         <div style={leftSectionStyle}>
-          <img src="/img/Lampung_coa.png" alt="Logo" style={logoStyle} />
+          <img src="/img/logo_1.png" alt="Logo" style={logoStyle} />
           <div style={dividerStyle} />
-          <img src="/img/bpbd.png" alt="Logo" style={logoStyle} />
           <span style={textStyle}>
-            Badan Penanggulangan Bencana Daerah <br />
+            Dashboard Laporan Bencana <br />
             Provinsi Lampung
           </span>
         </div>

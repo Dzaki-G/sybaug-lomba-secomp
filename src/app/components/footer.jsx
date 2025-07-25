@@ -5,12 +5,36 @@ export default function Footer() {
     <footer style={footerWrapper}>
       <div style={footerContent}>
         <p style={footerText}>
-          © {new Date().getFullYear()} Badan Penanggulangan Bencana Provinsi Lampung. All rights reserved.
+          © {new Date().getFullYear()} Tim SYBAUG | Lomba SECOMP 2025 Web Development
         </p>
         <div style={footerLinks}>
-          <a href="#" style={footerLink}>Privacy Policy</a>
+          <a
+            href="https://www.instagram.com/geeeeastia/"
+            style={footerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram Dzaki
+          </a>
           <span style={divider}>|</span>
-          <a href="#" style={footerLink}>Terms of Service</a>
+          <a
+            href="https://www.instagram.com/gasae.lahh/"
+            style={footerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram Bagas
+          </a>
+          <span style={divider}>|</span>
+          <a
+            href="https://www.instagram.com/faw_bit14/"
+            style={footerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram Fawwaz
+          </a>
+          
         </div>
       </div>
     </footer>
