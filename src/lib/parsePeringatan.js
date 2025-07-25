@@ -22,7 +22,6 @@ export function parsePeringatan(value) {
       entries: [],
     };
 
-    // Ambil semua blok waktu
     const waktuRegex = /Pukul ([0-9:]+ WIB):([\s\S]*?)(?=Pukul [0-9:]+ WIB:|$)/g;
     let waktuMatch;
 
@@ -30,7 +29,6 @@ export function parsePeringatan(value) {
       const waktu = waktuMatch[1].trim();
       const isi = waktuMatch[2].trim();
 
-      // ✅ Perbaikan: regex lebih fleksibel dan tidak mewajibkan titik
       const potensiMatch = isi.match(/Potensi:\s*(.*?)(?=Alasan:|Mitigasi & Aksi:|\n|$)/);
       const potensi = potensiMatch ? potensiMatch[1].trim() : "";
 
@@ -41,7 +39,7 @@ export function parsePeringatan(value) {
         if (!text) return [];
         return text
           .split("\n")
-          .flatMap((line) => line.split(/(?=- )/)) // handle baris gabung
+          .flatMap((line) => line.split(/(?=- )/))
           .map((line) => line.replace(/^- /, "").trim())
           .filter((line) => line.length > 0);
       };

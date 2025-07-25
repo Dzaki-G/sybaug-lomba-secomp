@@ -185,7 +185,6 @@ export default function PeringatanCarousel() {
   );
 }
 
-// Salin semua style seperti carouselSection, carouselWrapper, slideCard, dll dari file lama
 // === Styles ===
 
 const carouselSection = {
@@ -263,7 +262,7 @@ const slideMeta = {
 const timeCardsContainer = {
   display: 'flex',
   flexWrap: 'wrap',
-  justifyContent: 'center',  // <-- Ini yang membuat rata tengah
+  justifyContent: 'center',  
   gap: '1rem',
   marginBottom: '2rem',
 };
@@ -278,10 +277,10 @@ const timeCard = {
   transition: 'transform 0.2s ease, box-shadow 0.2s ease',
   cursor: 'default',
   boxShadow: '0 4px 16px rgba(0,0,0,0.1)',
-  minWidth: '200px',  // Lebar minimal
-  maxWidth: '250px',  // Lebar maksimal
-  width: '200px',     // Lebar default
-  flex: '0 0 auto',   // Hindari card melebar
+  minWidth: '200px',  
+  maxWidth: '250px',  
+  width: '200px',     
+  flex: '0 0 auto',   
 };
 
 const timeHeader = {
